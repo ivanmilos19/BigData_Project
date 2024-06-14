@@ -1,6 +1,6 @@
 import os
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, when, array, lit
+from pyspark.sql.functions import col, when, array, lit, current_timestamp
 from datetime import date
 
 DATALAKE_ROOT_FOLDER = "C:/BigData_project/"
@@ -61,6 +61,9 @@ def combine_data(current_day):
             "genres_ANI",
             when(col("genres_ANI").isNull(), array()).otherwise(col("genres_ANI"))
         )
+
+        
+        df_ratings = df_ratings.withColumn("timestamp", current_timestamp())
 
         
         df_ratings.show(truncate=False)
