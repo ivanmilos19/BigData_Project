@@ -56,4 +56,3 @@ def load_parquet_to_es(file_path, index_name, id_field):
         print(f"An error occurred: {e}")
 
 
-load_parquet_to_es("C:/BigData_project/airflow/datalake/usage/animeAnalysis/AnimeTop300/20240614/combined_ratings.snappy.parquet", "anime_stats", "id")  

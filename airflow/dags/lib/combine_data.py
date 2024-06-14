@@ -3,17 +3,18 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, when, array, lit, current_timestamp
 from datetime import date
 
-DATALAKE_ROOT_FOLDER = "C:/BigData_project/"
+# DATALAKE_ROOT_FOLDER = "C:/BigData_project/"
 
 def combine_data(current_day):
     try:
         
-        RATING_PATH_MAL = os.path.join(DATALAKE_ROOT_FOLDER, "airflow", "datalake", "formatted", "MAL", "Top_anime", current_day)
-        RATING_PATH_ANI = os.path.join(DATALAKE_ROOT_FOLDER, "airflow", "datalake", "formatted", "ANI", "Top_anime", current_day)
-        USAGE_OUTPUT_FOLDER_BEST = os.path.join(DATALAKE_ROOT_FOLDER, "airflow", "datalake", "usage", "animeAnalysis", "AnimeTop300", current_day)
+        RATING_PATH_MAL = os.path.join("datalake", "formatted", "MAL", "Top_anime", current_day)
+        RATING_PATH_ANI = os.path.join("datalake", "formatted", "ANI", "Top_anime", current_day)
+        USAGE_OUTPUT_FOLDER_BEST = os.path.join("datalake", "usage", "animeAnalysis", "AnimeTop300", current_day)
 
         
         if not os.path.exists(USAGE_OUTPUT_FOLDER_BEST):
+            print("combine data creating folder", os.getcwd(), USAGE_OUTPUT_FOLDER_BEST)
             os.makedirs(USAGE_OUTPUT_FOLDER_BEST)
 
         
@@ -79,7 +80,8 @@ def combine_data(current_day):
     except Exception as e:
         print(f"An error occurred: {e}")
         raise
-
-if __name__ == "__main__":
+    
+def main():
     current_day = date.today().strftime("%Y%m%d")
     combine_data(current_day)
+

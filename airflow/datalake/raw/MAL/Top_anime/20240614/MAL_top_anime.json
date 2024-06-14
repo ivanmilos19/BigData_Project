@@ -267,20 +267,6 @@
         "ranking": 18
     },
     {
-        "id": 54492,
-        "title": {
-            "romaji": "Kusuriya no Hitorigoto",
-            "english": "The Apothecary Diaries",
-            "native": "薬屋のひとりごと"
-        },
-        "averageScore": 8.91,
-        "genres": [
-            "Drama",
-            "Mystery"
-        ],
-        "ranking": 19
-    },
-    {
         "id": 2904,
         "title": {
             "romaji": "Code Geass: Hangyaku no Lelouch R2",
@@ -293,6 +279,20 @@
             "Award Winning",
             "Drama",
             "Sci-Fi"
+        ],
+        "ranking": 19
+    },
+    {
+        "id": 54492,
+        "title": {
+            "romaji": "Kusuriya no Hitorigoto",
+            "english": "The Apothecary Diaries",
+            "native": "薬屋のひとりごと"
+        },
+        "averageScore": 8.9,
+        "genres": [
+            "Drama",
+            "Mystery"
         ],
         "ranking": 20
     },
@@ -1269,19 +1269,6 @@
         "ranking": 86
     },
     {
-        "id": 39894,
-        "title": {
-            "romaji": "Hibike! Euphonium 3",
-            "english": "Sound! Euphonium 3",
-            "native": "響け！ユーフォニアム3"
-        },
-        "averageScore": 8.61,
-        "genres": [
-            "Drama"
-        ],
-        "ranking": 87
-    },
-    {
         "id": 36862,
         "title": {
             "romaji": "Made in Abyss Movie 3: Fukaki Tamashii no Reimei",
@@ -1296,7 +1283,7 @@
             "Mystery",
             "Sci-Fi"
         ],
-        "ranking": 88
+        "ranking": 87
     },
     {
         "id": 7311,
@@ -1312,7 +1299,7 @@
             "Sci-Fi",
             "Supernatural"
         ],
-        "ranking": 89
+        "ranking": 88
     },
     {
         "id": 42310,
@@ -1325,6 +1312,19 @@
         "genres": [
             "Action",
             "Sci-Fi"
+        ],
+        "ranking": 89
+    },
+    {
+        "id": 39894,
+        "title": {
+            "romaji": "Hibike! Euphonium 3",
+            "english": "Sound! Euphonium 3",
+            "native": "響け！ユーフォニアム3"
+        },
+        "averageScore": 8.6,
+        "genres": [
+            "Drama"
         ],
         "ranking": 90
     },
@@ -4047,19 +4047,6 @@
         "ranking": 277
     },
     {
-        "id": 53410,
-        "title": {
-            "romaji": "Yuru Camp△ Season 3",
-            "english": "Laid-Back Camp Season 3",
-            "native": "ゆるキャン△ SEASON3"
-        },
-        "averageScore": 8.29,
-        "genres": [
-            "Slice of Life"
-        ],
-        "ranking": 278
-    },
-    {
         "id": 10863,
         "title": {
             "romaji": "Steins;Gate: Oukoubakko no Poriomania",
@@ -4071,7 +4058,7 @@
             "Comedy",
             "Sci-Fi"
         ],
-        "ranking": 279
+        "ranking": 278
     },
     {
         "id": 24415,
@@ -4084,7 +4071,7 @@
         "genres": [
             "Sports"
         ],
-        "ranking": 280
+        "ranking": 279
     },
     {
         "id": 22507,
@@ -4095,7 +4082,7 @@
         },
         "averageScore": 8.29,
         "genres": [],
-        "ranking": 281
+        "ranking": 280
     },
     {
         "id": 48316,
@@ -4110,7 +4097,7 @@
             "Comedy",
             "Fantasy"
         ],
-        "ranking": 282
+        "ranking": 281
     },
     {
         "id": 49918,
@@ -4123,7 +4110,7 @@
         "genres": [
             "Action"
         ],
-        "ranking": 283
+        "ranking": 282
     },
     {
         "id": 1365,
@@ -4137,7 +4124,7 @@
             "Adventure",
             "Mystery"
         ],
-        "ranking": 284
+        "ranking": 283
     },
     {
         "id": 57,
@@ -4150,6 +4137,19 @@
         "genres": [
             "Comedy",
             "Drama"
+        ],
+        "ranking": 284
+    },
+    {
+        "id": 53410,
+        "title": {
+            "romaji": "Yuru Camp△ Season 3",
+            "english": "Laid-Back Camp Season 3",
+            "native": "ゆるキャン△ SEASON3"
+        },
+        "averageScore": 8.28,
+        "genres": [
+            "Slice of Life"
         ],
         "ranking": 285
     },
@@ -4223,6 +4223,22 @@
         "ranking": 290
     },
     {
+        "id": 49571,
+        "title": {
+            "romaji": "Tunshi Xingkong 2nd Season",
+            "english": "Swallowed Star 2nd Season",
+            "native": "吞噬星空 第二季"
+        },
+        "averageScore": 8.28,
+        "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Sci-Fi"
+        ],
+        "ranking": 291
+    },
+    {
         "id": 486,
         "title": {
             "romaji": "Kino no Tabi: The Beautiful World",
@@ -4235,7 +4251,7 @@
             "Drama",
             "Fantasy"
         ],
-        "ranking": 291
+        "ranking": 292
     },
     {
         "id": 9735,
@@ -4250,7 +4266,7 @@
             "Comedy",
             "Sci-Fi"
         ],
-        "ranking": 292
+        "ranking": 293
     },
     {
         "id": 45,
@@ -4265,7 +4281,7 @@
             "Comedy",
             "Romance"
         ],
-        "ranking": 293
+        "ranking": 294
     },
     {
         "id": 10408,
@@ -4281,7 +4297,7 @@
             "Romance",
             "Supernatural"
         ],
-        "ranking": 294
+        "ranking": 295
     },
     {
         "id": 43325,
@@ -4295,7 +4311,7 @@
             "Mystery",
             "Suspense"
         ],
-        "ranking": 295
+        "ranking": 296
     },
     {
         "id": 54870,
@@ -4310,7 +4326,7 @@
             "Romance",
             "Supernatural"
         ],
-        "ranking": 296
+        "ranking": 297
     },
     {
         "id": 36371,
@@ -4324,7 +4340,7 @@
             "Drama",
             "Sci-Fi"
         ],
-        "ranking": 297
+        "ranking": 298
     },
     {
         "id": 38731,
@@ -4337,7 +4353,7 @@
         "genres": [
             "Sports"
         ],
-        "ranking": 298
+        "ranking": 299
     },
     {
         "id": 19363,
@@ -4349,19 +4365,6 @@
         "averageScore": 8.27,
         "genres": [
             "Comedy"
-        ],
-        "ranking": 299
-    },
-    {
-        "id": 34798,
-        "title": {
-            "romaji": "Yuru Camp△",
-            "english": "Laid-Back Camp",
-            "native": "ゆるキャン△"
-        },
-        "averageScore": 8.27,
-        "genres": [
-            "Slice of Life"
         ],
         "ranking": 300
     }

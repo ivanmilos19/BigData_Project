@@ -4144,23 +4144,6 @@
         "ranking": 262
     },
     {
-        "id": 5205,
-        "title": {
-            "romaji": "Kara no Kyoukai: Satsujin Kousatsu (Kou)",
-            "english": "the Garden of sinners Chapter 7: ……not nothing heart. (Murder Speculation Part B)",
-            "native": "空の境界 殺人考察(後)"
-        },
-        "averageScore": 81,
-        "genres": [
-            "Action",
-            "Mystery",
-            "Romance",
-            "Supernatural",
-            "Thriller"
-        ],
-        "ranking": 263
-    },
-    {
         "id": 1210,
         "title": {
             "romaji": "NHK ni Youkoso!",
@@ -4175,7 +4158,7 @@
             "Romance",
             "Slice of Life"
         ],
-        "ranking": 264
+        "ranking": 263
     },
     {
         "id": 235,
@@ -4191,7 +4174,7 @@
             "Mystery",
             "Psychological"
         ],
-        "ranking": 265
+        "ranking": 264
     },
     {
         "id": 137822,
@@ -4206,7 +4189,7 @@
             "Drama",
             "Sports"
         ],
-        "ranking": 266
+        "ranking": 265
     },
     {
         "id": 124561,
@@ -4219,7 +4202,7 @@
         "genres": [
             "Adventure"
         ],
-        "ranking": 267
+        "ranking": 266
     },
     {
         "id": 98444,
@@ -4233,7 +4216,7 @@
             "Comedy",
             "Slice of Life"
         ],
-        "ranking": 268
+        "ranking": 267
     },
     {
         "id": 20623,
@@ -4250,7 +4233,7 @@
             "Psychological",
             "Sci-Fi"
         ],
-        "ranking": 269
+        "ranking": 268
     },
     {
         "id": 10030,
@@ -4265,6 +4248,23 @@
             "Drama",
             "Romance",
             "Slice of Life"
+        ],
+        "ranking": 269
+    },
+    {
+        "id": 5205,
+        "title": {
+            "romaji": "Kara no Kyoukai: Satsujin Kousatsu (Kou)",
+            "english": "the Garden of sinners Chapter 7: ……not nothing heart. (Murder Speculation Part B)",
+            "native": "空の境界 殺人考察(後)"
+        },
+        "averageScore": 81,
+        "genres": [
+            "Action",
+            "Mystery",
+            "Romance",
+            "Supernatural",
+            "Thriller"
         ],
         "ranking": 270
     },

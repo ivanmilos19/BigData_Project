@@ -1,7 +1,14 @@
 # from airflow import DAG
 # from airflow.operators.python_operator import PythonOperator
 # from airflow.utils.dates import days_ago
-# from datetime import datetime
+# from datetime import date
+
+from lib.combine_data import main
+
+main()
+
+
+
 
 
 # import lib.data_fetcher.fetch_ANI_anime_data 

@@ -24,8 +24,9 @@ def get_top_anime_statistics(page):
 
 def save_anime_statistics(anime_statistics):
     current_day = date.today().strftime("%Y%m%d")
-    TARGET_PATH = os.path.join("airflow/datalake/raw/MAL/Top_anime", current_day)
+    TARGET_PATH = os.path.join("datalake/raw/MAL/Top_anime", current_day)
     if not os.path.exists(TARGET_PATH):
+        print("MAL creating folder", os.getcwd(), TARGET_PATH)
         os.makedirs(TARGET_PATH, exist_ok=True)
     print("Writing here: ", TARGET_PATH)
     with open(os.path.join(TARGET_PATH, "MAL_top_anime.json"), "w", encoding='utf-8') as f:
@@ -44,31 +45,35 @@ def format_anime_data(anime, ranking):
         "ranking": ranking
     }
 
-anime_statistics = []
-page = 1
+def main():
+    anime_statistics = []
+    page = 1
 
 
-while len(anime_statistics) < 300:
-    page_data = get_top_anime_statistics(page)
-    if page_data:
-        anime_statistics.extend(page_data)
-    else:
-        break
-    page += 1
-    time.sleep(1)  
+    while len(anime_statistics) < 300:
+        page_data = get_top_anime_statistics(page)
+        if page_data:
+            anime_statistics.extend(page_data)
+        else:
+            break
+        page += 1
+        time.sleep(1)  
 
 
-anime_statistics = anime_statistics[:300]
+    anime_statistics = anime_statistics[:300]
 
 
-formatted_anime_statistics = [format_anime_data(anime, index + 1) for index, anime in enumerate(anime_statistics)]
+    formatted_anime_statistics = [format_anime_data(anime, index + 1) for index, anime in enumerate(anime_statistics)]
+    save_anime_statistics(formatted_anime_statistics)
 
 
-for anime in formatted_anime_statistics:
-    try:
-        print(json.dumps(anime, ensure_ascii=False, indent=4))
-    except UnicodeEncodeError:
-        print(json.dumps(anime, ensure_ascii=False, indent=4).encode('ascii', 'replace').decode('ascii'))
+    for anime in formatted_anime_statistics:
+        try:
+            print(json.dumps(anime, ensure_ascii=False, indent=4))
+        except UnicodeEncodeError:
+            print(json.dumps(anime, ensure_ascii=False, indent=4).encode('ascii', 'replace').decode('ascii'))
 
 
-save_anime_statistics(formatted_anime_statistics)
+
+
+
