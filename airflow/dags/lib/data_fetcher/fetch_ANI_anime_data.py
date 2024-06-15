@@ -66,9 +66,6 @@ def format_anime_data(anime, ranking):
     }
 
 def main():
-    # import os
-    # print("run() cwd", os.getcwd())
-
     anime_statistics = []
     page = 1
 

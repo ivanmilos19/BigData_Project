@@ -7,7 +7,6 @@ from datetime import date
 
 
 
-
 def get_top_anime_statistics(page):
     url = f"https://api.jikan.moe/v4/top/anime?page={page}"
     try:
