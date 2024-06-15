@@ -1687,6 +1687,22 @@
         "ranking": 114
     },
     {
+        "id": 52701,
+        "title": {
+            "romaji": "Dungeon Meshi",
+            "english": "Delicious in Dungeon",
+            "native": "ダンジョン飯"
+        },
+        "averageScore": 8.54,
+        "genres": [
+            "Adventure",
+            "Comedy",
+            "Fantasy",
+            "Gourmet"
+        ],
+        "ranking": 115
+    },
+    {
         "id": 5300,
         "title": {
             "romaji": "Zoku Natsume Yuujinchou",
@@ -1698,7 +1714,7 @@
             "Slice of Life",
             "Supernatural"
         ],
-        "ranking": 115
+        "ranking": 116
     },
     {
         "id": 40417,
@@ -1713,7 +1729,7 @@
             "Romance",
             "Supernatural"
         ],
-        "ranking": 116
+        "ranking": 117
     },
     {
         "id": 170,
@@ -1726,7 +1742,7 @@
         "genres": [
             "Sports"
         ],
-        "ranking": 117
+        "ranking": 118
     },
     {
         "id": 21329,
@@ -1742,7 +1758,7 @@
             "Slice of Life",
             "Supernatural"
         ],
-        "ranking": 118
+        "ranking": 119
     },
     {
         "id": 30484,
@@ -1757,7 +1773,7 @@
             "Sci-Fi",
             "Suspense"
         ],
-        "ranking": 119
+        "ranking": 120
     },
     {
         "id": 12365,
@@ -1771,22 +1787,6 @@
             "Comedy",
             "Drama",
             "Romance"
-        ],
-        "ranking": 120
-    },
-    {
-        "id": 52701,
-        "title": {
-            "romaji": "Dungeon Meshi",
-            "english": "Delicious in Dungeon",
-            "native": "ダンジョン飯"
-        },
-        "averageScore": 8.52,
-        "genres": [
-            "Adventure",
-            "Comedy",
-            "Fantasy",
-            "Gourmet"
         ],
         "ranking": 121
     },
@@ -2926,17 +2926,6 @@
         "ranking": 199
     },
     {
-        "id": 50183,
-        "title": {
-            "romaji": "Blue Giant",
-            "english": "Blue Giant",
-            "native": "BLUE GIANT"
-        },
-        "averageScore": 8.38,
-        "genres": [],
-        "ranking": 200
-    },
-    {
         "id": 14397,
         "title": {
             "romaji": "Chihayafuru 2",
@@ -2948,7 +2937,7 @@
             "Drama",
             "Sports"
         ],
-        "ranking": 201
+        "ranking": 200
     },
     {
         "id": 5,
@@ -2962,7 +2951,7 @@
             "Action",
             "Sci-Fi"
         ],
-        "ranking": 202
+        "ranking": 201
     },
     {
         "id": 39551,
@@ -2978,7 +2967,7 @@
             "Comedy",
             "Fantasy"
         ],
-        "ranking": 203
+        "ranking": 202
     },
     {
         "id": 55255,
@@ -2993,7 +2982,7 @@
             "Sci-Fi",
             "Suspense"
         ],
-        "ranking": 204
+        "ranking": 203
     },
     {
         "id": 37515,
@@ -3010,7 +2999,7 @@
             "Mystery",
             "Sci-Fi"
         ],
-        "ranking": 205
+        "ranking": 204
     },
     {
         "id": 4921,
@@ -3023,7 +3012,7 @@
         "genres": [
             "Adventure"
         ],
-        "ranking": 206
+        "ranking": 205
     },
     {
         "id": 5941,
@@ -3038,7 +3027,7 @@
             "Romance",
             "Sports"
         ],
-        "ranking": 207
+        "ranking": 206
     },
     {
         "id": 39808,
@@ -3051,7 +3040,7 @@
         "genres": [
             "Slice of Life"
         ],
-        "ranking": 208
+        "ranking": 207
     },
     {
         "id": 11979,
@@ -3066,7 +3055,7 @@
             "Fantasy",
             "Suspense"
         ],
-        "ranking": 209
+        "ranking": 208
     },
     {
         "id": 9756,
@@ -3082,6 +3071,17 @@
             "Fantasy",
             "Suspense"
         ],
+        "ranking": 209
+    },
+    {
+        "id": 50183,
+        "title": {
+            "romaji": "Blue Giant",
+            "english": "Blue Giant",
+            "native": "BLUE GIANT"
+        },
+        "averageScore": 8.37,
+        "genres": [],
         "ranking": 210
     },
     {

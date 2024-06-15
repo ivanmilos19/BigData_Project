@@ -3,6 +3,7 @@ from elasticsearch import Elasticsearch, helpers
 import pandas as pd
 import pyarrow.parquet as pq
 import os
+from datetime import date
 
 
 
@@ -54,5 +55,9 @@ def load_parquet_to_es(file_path, index_name, id_field):
         print(f"File not found: {e}")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+def main():
+    current_day = date.today().strftime("%Y%m%d")
+    load_parquet_to_es(f"datalake/usage/animeAnalysis/AnimeTop300/{current_day}/combined_ratings.snappy.parquet", "anime_stats", "id")  
 
 

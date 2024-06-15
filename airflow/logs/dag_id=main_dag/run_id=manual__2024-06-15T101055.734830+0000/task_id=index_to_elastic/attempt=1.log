@@ -1,0 +1,25 @@
+[2024-06-15T10:11:55.533+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-15T10:11:55.558+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.index_to_elastic manual__2024-06-15T10:10:55.734830+00:00 [queued]>
+[2024-06-15T10:11:55.570+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.index_to_elastic manual__2024-06-15T10:10:55.734830+00:00 [queued]>
+[2024-06-15T10:11:55.570+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-15T10:11:55.699+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): index_to_elastic> on 2024-06-15 10:10:55.734830+00:00
+[2024-06-15T10:11:55.706+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'main_dag', 'index_to_elastic', 'manual__2024-06-15T10:10:55.734830+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpy0veyy12']
+[2024-06-15T10:11:55.707+0000] {standard_task_runner.py:91} INFO - Job 45: Subtask index_to_elastic
+[2024-06-15T10:11:55.710+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1806) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-15T10:11:55.711+0000] {standard_task_runner.py:63} INFO - Started process 1823 to run task
+[2024-06-15T10:11:55.767+0000] {task_command.py:426} INFO - Running <TaskInstance: main_dag.index_to_elastic manual__2024-06-15T10:10:55.734830+00:00 [running]> on host 64de298a3d77
+[2024-06-15T10:11:55.871+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='index_to_elastic' AIRFLOW_CTX_EXECUTION_DATE='2024-06-15T10:10:55.734830+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-15T10:10:55.734830+00:00'
+[2024-06-15T10:11:55.873+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-15T10:11:55.883+0000] {logging_mixin.py:188} INFO - Checking file: datalake/usage/animeAnalysis/AnimeTop300/20240615/combined_ratings.snappy.parquet
+[2024-06-15T10:11:55.887+0000] {logging_mixin.py:188} INFO - File exists: True
+[2024-06-15T10:11:55.889+0000] {logging_mixin.py:188} INFO - File readable: True
+[2024-06-15T10:11:56.979+0000] {_transport.py:349} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.991s]
+[2024-06-15T10:11:57.097+0000] {_transport.py:349} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.115s]
+[2024-06-15T10:11:57.098+0000] {logging_mixin.py:188} INFO - Documents successfully indexed: 520
+[2024-06-15T10:11:57.098+0000] {logging_mixin.py:188} INFO - Documents failed to index: 0
+[2024-06-15T10:11:57.099+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-15T10:11:57.099+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-15T10:11:57.109+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=index_to_elastic, run_id=manual__2024-06-15T10:10:55.734830+00:00, execution_date=20240615T101055, start_date=20240615T101155, end_date=20240615T101157
+[2024-06-15T10:11:57.169+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-15T10:11:57.183+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-15T10:11:57.184+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

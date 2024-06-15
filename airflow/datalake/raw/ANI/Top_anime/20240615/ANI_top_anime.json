@@ -664,22 +664,6 @@
         "ranking": 42
     },
     {
-        "id": 136484,
-        "title": {
-            "romaji": "Shiguang Dailiren II",
-            "english": "Link Click Season 2",
-            "native": "时光代理人 第二季"
-        },
-        "averageScore": 86,
-        "genres": [
-            "Drama",
-            "Mystery",
-            "Supernatural",
-            "Thriller"
-        ],
-        "ranking": 43
-    },
-    {
         "id": 110277,
         "title": {
             "romaji": "Shingeki no Kyojin: The Final Season",
@@ -693,7 +677,7 @@
             "Fantasy",
             "Mystery"
         ],
-        "ranking": 44
+        "ranking": 43
     },
     {
         "id": 21733,
@@ -706,7 +690,7 @@
         "genres": [
             "Drama"
         ],
-        "ranking": 45
+        "ranking": 44
     },
     {
         "id": 263,
@@ -721,7 +705,7 @@
             "Drama",
             "Sports"
         ],
-        "ranking": 46
+        "ranking": 45
     },
     {
         "id": 153658,
@@ -736,7 +720,7 @@
             "Drama",
             "Sports"
         ],
-        "ranking": 47
+        "ranking": 46
     },
     {
         "id": 142329,
@@ -751,6 +735,22 @@
             "Adventure",
             "Fantasy",
             "Supernatural"
+        ],
+        "ranking": 47
+    },
+    {
+        "id": 136484,
+        "title": {
+            "romaji": "Shiguang Dailiren II",
+            "english": "Link Click Season 2",
+            "native": "时光代理人 第二季"
+        },
+        "averageScore": 86,
+        "genres": [
+            "Drama",
+            "Mystery",
+            "Supernatural",
+            "Thriller"
         ],
         "ranking": 48
     },
@@ -1692,19 +1692,6 @@
         "ranking": 106
     },
     {
-        "id": 155227,
-        "title": {
-            "romaji": "Kingdom 5th Season",
-            "english": "Kingdom Season 5",
-            "native": "キングダム 第5シリーズ"
-        },
-        "averageScore": 84,
-        "genres": [
-            "Action"
-        ],
-        "ranking": 107
-    },
-    {
         "id": 112151,
         "title": {
             "romaji": "Kimetsu no Yaiba: Mugen Ressha-hen",
@@ -1720,7 +1707,7 @@
             "Mystery",
             "Supernatural"
         ],
-        "ranking": 108
+        "ranking": 107
     },
     {
         "id": 104459,
@@ -1734,7 +1721,7 @@
             "Comedy",
             "Slice of Life"
         ],
-        "ranking": 109
+        "ranking": 108
     },
     {
         "id": 102883,
@@ -1751,7 +1738,7 @@
             "Mystery",
             "Supernatural"
         ],
-        "ranking": 110
+        "ranking": 109
     },
     {
         "id": 99088,
@@ -1767,7 +1754,7 @@
             "Psychological",
             "Sci-Fi"
         ],
-        "ranking": 111
+        "ranking": 110
     },
     {
         "id": 21450,
@@ -1784,7 +1771,7 @@
             "Mystery",
             "Supernatural"
         ],
-        "ranking": 112
+        "ranking": 111
     },
     {
         "id": 20958,
@@ -1800,7 +1787,7 @@
             "Fantasy",
             "Mystery"
         ],
-        "ranking": 113
+        "ranking": 112
     },
     {
         "id": 16498,
@@ -1815,6 +1802,19 @@
             "Drama",
             "Fantasy",
             "Mystery"
+        ],
+        "ranking": 113
+    },
+    {
+        "id": 155227,
+        "title": {
+            "romaji": "Kingdom 5th Season",
+            "english": "Kingdom Season 5",
+            "native": "キングダム 第5シリーズ"
+        },
+        "averageScore": 84,
+        "genres": [
+            "Action"
         ],
         "ranking": 114
     },
@@ -2172,6 +2172,21 @@
         "ranking": 136
     },
     {
+        "id": 153518,
+        "title": {
+            "romaji": "Dungeon Meshi",
+            "english": "Delicious in Dungeon",
+            "native": "ダンジョン飯"
+        },
+        "averageScore": 83,
+        "genres": [
+            "Adventure",
+            "Comedy",
+            "Fantasy"
+        ],
+        "ranking": 137
+    },
+    {
         "id": 127595,
         "title": {
             "romaji": "Wu Liuqi: Xuanwu Guo Pian",
@@ -2183,7 +2198,7 @@
             "Action",
             "Comedy"
         ],
-        "ranking": 137
+        "ranking": 138
     },
     {
         "id": 98034,
@@ -2198,7 +2213,7 @@
             "Slice of Life",
             "Supernatural"
         ],
-        "ranking": 138
+        "ranking": 139
     },
     {
         "id": 11981,
@@ -2216,7 +2231,7 @@
             "Psychological",
             "Thriller"
         ],
-        "ranking": 139
+        "ranking": 140
     },
     {
         "id": 33,
@@ -2234,7 +2249,7 @@
             "Horror",
             "Supernatural"
         ],
-        "ranking": 140
+        "ranking": 141
     },
     {
         "id": 113260,
@@ -2250,7 +2265,7 @@
             "Fantasy",
             "Romance"
         ],
-        "ranking": 141
+        "ranking": 142
     },
     {
         "id": 110355,
@@ -2265,7 +2280,7 @@
             "Adventure",
             "Comedy"
         ],
-        "ranking": 142
+        "ranking": 143
     },
     {
         "id": 101759,
@@ -2283,7 +2298,7 @@
             "Psychological",
             "Thriller"
         ],
-        "ranking": 143
+        "ranking": 144
     },
     {
         "id": 20464,
@@ -2298,7 +2313,7 @@
             "Drama",
             "Sports"
         ],
-        "ranking": 144
+        "ranking": 145
     },
     {
         "id": 9617,
@@ -2313,7 +2328,7 @@
             "Music",
             "Slice of Life"
         ],
-        "ranking": 145
+        "ranking": 146
     },
     {
         "id": 129201,
@@ -2330,7 +2345,7 @@
             "Supernatural",
             "Thriller"
         ],
-        "ranking": 146
+        "ranking": 147
     },
     {
         "id": 104458,
@@ -2348,7 +2363,7 @@
             "Mystery",
             "Supernatural"
         ],
-        "ranking": 147
+        "ranking": 148
     },
     {
         "id": 21170,
@@ -2364,7 +2379,7 @@
             "Drama",
             "Supernatural"
         ],
-        "ranking": 148
+        "ranking": 149
     },
     {
         "id": 12365,
@@ -2380,7 +2395,7 @@
             "Romance",
             "Slice of Life"
         ],
-        "ranking": 149
+        "ranking": 150
     },
     {
         "id": 12355,
@@ -2396,7 +2411,7 @@
             "Romance",
             "Slice of Life"
         ],
-        "ranking": 150
+        "ranking": 151
     },
     {
         "id": 7472,
@@ -2411,7 +2426,7 @@
             "Comedy",
             "Sci-Fi"
         ],
-        "ranking": 151
+        "ranking": 152
     },
     {
         "id": 5300,
@@ -2427,7 +2442,7 @@
             "Slice of Life",
             "Supernatural"
         ],
-        "ranking": 152
+        "ranking": 153
     },
     {
         "id": 109190,
@@ -2442,7 +2457,7 @@
             "Fantasy",
             "Slice of Life"
         ],
-        "ranking": 153
+        "ranking": 154
     },
     {
         "id": 106625,
@@ -2457,7 +2472,7 @@
             "Drama",
             "Sports"
         ],
-        "ranking": 154
+        "ranking": 155
     },
     {
         "id": 20526,
@@ -2475,7 +2490,7 @@
             "Slice of Life",
             "Supernatural"
         ],
-        "ranking": 155
+        "ranking": 156
     },
     {
         "id": 161964,
@@ -2487,21 +2502,6 @@
         "averageScore": 83,
         "genres": [
             "Action",
-            "Comedy",
-            "Fantasy"
-        ],
-        "ranking": 156
-    },
-    {
-        "id": 153518,
-        "title": {
-            "romaji": "Dungeon Meshi",
-            "english": "Delicious in Dungeon",
-            "native": "ダンジョン飯"
-        },
-        "averageScore": 83,
-        "genres": [
-            "Adventure",
             "Comedy",
             "Fantasy"
         ],
@@ -3244,6 +3244,20 @@
         "ranking": 204
     },
     {
+        "id": 140499,
+        "title": {
+            "romaji": "BLUE GIANT",
+            "english": "Blue Giant",
+            "native": "BLUE GIANT"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Drama",
+            "Music"
+        ],
+        "ranking": 205
+    },
+    {
         "id": 138424,
         "title": {
             "romaji": "Karakai Jouzu no Takagi-san 3",
@@ -3256,7 +3270,7 @@
             "Romance",
             "Slice of Life"
         ],
-        "ranking": 205
+        "ranking": 206
     },
     {
         "id": 99714,
@@ -3272,7 +3286,7 @@
             "Drama",
             "Sci-Fi"
         ],
-        "ranking": 206
+        "ranking": 207
     },
     {
         "id": 20811,
@@ -3286,7 +3300,7 @@
             "Action",
             "Fantasy"
         ],
-        "ranking": 207
+        "ranking": 208
     },
     {
         "id": 20799,
@@ -3302,7 +3316,7 @@
             "Drama",
             "Supernatural"
         ],
-        "ranking": 208
+        "ranking": 209
     },
     {
         "id": 5028,
@@ -3318,7 +3332,7 @@
             "Romance",
             "Sports"
         ],
-        "ranking": 209
+        "ranking": 210
     },
     {
         "id": 136,
@@ -3333,7 +3347,7 @@
             "Adventure",
             "Fantasy"
         ],
-        "ranking": 210
+        "ranking": 211
     },
     {
         "id": 166873,
@@ -3349,7 +3363,7 @@
             "Ecchi",
             "Fantasy"
         ],
-        "ranking": 211
+        "ranking": 212
     },
     {
         "id": 142838,
@@ -3364,20 +3378,6 @@
             "Comedy",
             "Slice of Life",
             "Supernatural"
-        ],
-        "ranking": 212
-    },
-    {
-        "id": 140499,
-        "title": {
-            "romaji": "BLUE GIANT",
-            "english": "Blue Giant",
-            "native": "BLUE GIANT"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Drama",
-            "Music"
         ],
         "ranking": 213
     },
@@ -3495,161 +3495,19 @@
         "ranking": 220
     },
     {
-        "id": 146065,
+        "id": 164212,
         "title": {
-            "romaji": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
-            "english": "Mushoku Tensei: Jobless Reincarnation Season 2",
-            "native": "無職転生 Ⅱ ～異世界行ったら本気だす～"
+            "romaji": "Girls Band Cry",
+            "english": null,
+            "native": "ガールズバンドクライ"
         },
         "averageScore": 82,
         "genres": [
-            "Adventure",
-            "Drama",
-            "Ecchi",
-            "Fantasy"
-        ],
-        "ranking": 221
-    },
-    {
-        "id": 128546,
-        "title": {
-            "romaji": "Vivy: Fluorite Eye’s Song",
-            "english": "Vivy -Fluorite Eye's Song-",
-            "native": "Vivy -Fluorite Eye’s Song-"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Action",
             "Drama",
             "Music",
-            "Sci-Fi",
-            "Thriller"
-        ],
-        "ranking": 222
-    },
-    {
-        "id": 116589,
-        "title": {
-            "romaji": "86: Eighty Six",
-            "english": "86 EIGHTY-SIX",
-            "native": "86－エイティシックス－"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Action",
-            "Drama",
-            "Mecha",
-            "Sci-Fi"
-        ],
-        "ranking": 223
-    },
-    {
-        "id": 105334,
-        "title": {
-            "romaji": "Fruits Basket: 1st Season",
-            "english": "Fruits Basket (2019)",
-            "native": "フルーツバスケット 1st Season"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Comedy",
-            "Drama",
-            "Romance",
-            "Slice of Life",
-            "Supernatural"
-        ],
-        "ranking": 224
-    },
-    {
-        "id": 100922,
-        "title": {
-            "romaji": "Grand Blue",
-            "english": "Grand Blue Dreaming",
-            "native": "ぐらんぶる"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Comedy",
-            "Slice of Life",
-            "Sports"
-        ],
-        "ranking": 225
-    },
-    {
-        "id": 20722,
-        "title": {
-            "romaji": "Barakamon",
-            "english": "Barakamon",
-            "native": "ばらかもん"
-        },
-        "averageScore": 82,
-        "genres": [
             "Slice of Life"
         ],
-        "ranking": 226
-    },
-    {
-        "id": 11577,
-        "title": {
-            "romaji": "Steins;Gate: Fuka Ryouiki no Déjà vu",
-            "english": "Steins;Gate The Movie – Load Region of Déjà Vu",
-            "native": "劇場版 シュタインズゲート 負荷領域のデジャヴ"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Drama",
-            "Romance",
-            "Sci-Fi",
-            "Thriller"
-        ],
-        "ranking": 227
-    },
-    {
-        "id": 5,
-        "title": {
-            "romaji": "Cowboy Bebop: Tengoku no Tobira",
-            "english": "Cowboy Bebop: The Movie - Knockin' on Heaven's Door",
-            "native": "カウボーイビバップ天国の扉"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Action",
-            "Drama",
-            "Mystery",
-            "Sci-Fi"
-        ],
-        "ranking": 228
-    },
-    {
-        "id": 163132,
-        "title": {
-            "romaji": "Horimiya: piece",
-            "english": "Horimiya: The Missing Pieces",
-            "native": "ホリミヤ -piece-"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Comedy",
-            "Romance",
-            "Slice of Life"
-        ],
-        "ranking": 229
-    },
-    {
-        "id": 161474,
-        "title": {
-            "romaji": "Seishun Buta Yarou wa Randoseru Girl no Yume wo Minai",
-            "english": "Rascal Does Not Dream of a Knapsack Kid",
-            "native": "青春ブタ野郎はランドセルガールの夢を見ない"
-        },
-        "averageScore": 82,
-        "genres": [
-            "Drama",
-            "Psychological",
-            "Romance",
-            "Supernatural"
-        ],
-        "ranking": 230
+        "ranking": 221
     },
     {
         "id": 155211,
@@ -3666,7 +3524,164 @@
             "Fantasy",
             "Romance"
         ],
+        "ranking": 222
+    },
+    {
+        "id": 146065,
+        "title": {
+            "romaji": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+            "english": "Mushoku Tensei: Jobless Reincarnation Season 2",
+            "native": "無職転生 Ⅱ ～異世界行ったら本気だす～"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Adventure",
+            "Drama",
+            "Ecchi",
+            "Fantasy"
+        ],
+        "ranking": 223
+    },
+    {
+        "id": 128546,
+        "title": {
+            "romaji": "Vivy: Fluorite Eye’s Song",
+            "english": "Vivy -Fluorite Eye's Song-",
+            "native": "Vivy -Fluorite Eye’s Song-"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Action",
+            "Drama",
+            "Music",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "ranking": 224
+    },
+    {
+        "id": 116589,
+        "title": {
+            "romaji": "86: Eighty Six",
+            "english": "86 EIGHTY-SIX",
+            "native": "86－エイティシックス－"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Action",
+            "Drama",
+            "Mecha",
+            "Sci-Fi"
+        ],
+        "ranking": 225
+    },
+    {
+        "id": 105334,
+        "title": {
+            "romaji": "Fruits Basket: 1st Season",
+            "english": "Fruits Basket (2019)",
+            "native": "フルーツバスケット 1st Season"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Comedy",
+            "Drama",
+            "Romance",
+            "Slice of Life",
+            "Supernatural"
+        ],
+        "ranking": 226
+    },
+    {
+        "id": 100922,
+        "title": {
+            "romaji": "Grand Blue",
+            "english": "Grand Blue Dreaming",
+            "native": "ぐらんぶる"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Comedy",
+            "Slice of Life",
+            "Sports"
+        ],
+        "ranking": 227
+    },
+    {
+        "id": 20722,
+        "title": {
+            "romaji": "Barakamon",
+            "english": "Barakamon",
+            "native": "ばらかもん"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Slice of Life"
+        ],
+        "ranking": 228
+    },
+    {
+        "id": 11577,
+        "title": {
+            "romaji": "Steins;Gate: Fuka Ryouiki no Déjà vu",
+            "english": "Steins;Gate The Movie – Load Region of Déjà Vu",
+            "native": "劇場版 シュタインズゲート 負荷領域のデジャヴ"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Drama",
+            "Romance",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "ranking": 229
+    },
+    {
+        "id": 5,
+        "title": {
+            "romaji": "Cowboy Bebop: Tengoku no Tobira",
+            "english": "Cowboy Bebop: The Movie - Knockin' on Heaven's Door",
+            "native": "カウボーイビバップ天国の扉"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Action",
+            "Drama",
+            "Mystery",
+            "Sci-Fi"
+        ],
+        "ranking": 230
+    },
+    {
+        "id": 163132,
+        "title": {
+            "romaji": "Horimiya: piece",
+            "english": "Horimiya: The Missing Pieces",
+            "native": "ホリミヤ -piece-"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Comedy",
+            "Romance",
+            "Slice of Life"
+        ],
         "ranking": 231
+    },
+    {
+        "id": 161474,
+        "title": {
+            "romaji": "Seishun Buta Yarou wa Randoseru Girl no Yume wo Minai",
+            "english": "Rascal Does Not Dream of a Knapsack Kid",
+            "native": "青春ブタ野郎はランドセルガールの夢を見ない"
+        },
+        "averageScore": 82,
+        "genres": [
+            "Drama",
+            "Psychological",
+            "Romance",
+            "Supernatural"
+        ],
+        "ranking": 232
     },
     {
         "id": 145139,
@@ -3683,7 +3698,7 @@
             "Fantasy",
             "Supernatural"
         ],
-        "ranking": 232
+        "ranking": 233
     },
     {
         "id": 139589,
@@ -3698,7 +3713,7 @@
             "Drama",
             "Slice of Life"
         ],
-        "ranking": 233
+        "ranking": 234
     },
     {
         "id": 107717,
@@ -3713,7 +3728,7 @@
             "Fantasy",
             "Slice of Life"
         ],
-        "ranking": 234
+        "ranking": 235
     },
     {
         "id": 100268,
@@ -3729,7 +3744,7 @@
             "Slice of Life",
             "Supernatural"
         ],
-        "ranking": 235
+        "ranking": 236
     },
     {
         "id": 99457,
@@ -3744,7 +3759,7 @@
             "Fantasy",
             "Psychological"
         ],
-        "ranking": 236
+        "ranking": 237
     },
     {
         "id": 136804,
@@ -3760,7 +3775,7 @@
             "Comedy",
             "Fantasy"
         ],
-        "ranking": 237
+        "ranking": 238
     },
     {
         "id": 130298,
@@ -3775,7 +3790,7 @@
             "Comedy",
             "Fantasy"
         ],
-        "ranking": 238
+        "ranking": 239
     },
     {
         "id": 128890,
@@ -3789,7 +3804,7 @@
             "Drama",
             "Music"
         ],
-        "ranking": 239
+        "ranking": 240
     },
     {
         "id": 110349,
@@ -3805,7 +3820,7 @@
             "Drama",
             "Thriller"
         ],
-        "ranking": 240
+        "ranking": 241
     },
     {
         "id": 107704,
@@ -3816,7 +3831,7 @@
         },
         "averageScore": 82,
         "genres": [],
-        "ranking": 241
+        "ranking": 242
     },
     {
         "id": 21673,
@@ -3833,7 +3848,7 @@
             "Music",
             "Sci-Fi"
         ],
-        "ranking": 242
+        "ranking": 243
     },
     {
         "id": 163571,
@@ -3848,7 +3863,7 @@
             "Music",
             "Slice of Life"
         ],
-        "ranking": 243
+        "ranking": 244
     },
     {
         "id": 156841,
@@ -3862,7 +3877,7 @@
             "Drama",
             "Mystery"
         ],
-        "ranking": 244
+        "ranking": 245
     },
     {
         "id": 155783,
@@ -3878,7 +3893,7 @@
             "Sci-Fi",
             "Thriller"
         ],
-        "ranking": 245
+        "ranking": 246
     },
     {
         "id": 144292,
@@ -3893,7 +3908,7 @@
             "Drama",
             "Sci-Fi"
         ],
-        "ranking": 246
+        "ranking": 247
     },
     {
         "id": 20812,
@@ -3908,7 +3923,7 @@
             "Drama",
             "Slice of Life"
         ],
-        "ranking": 247
+        "ranking": 248
     },
     {
         "id": 20792,
@@ -3924,7 +3939,7 @@
             "Fantasy",
             "Supernatural"
         ],
-        "ranking": 248
+        "ranking": 249
     },
     {
         "id": 10271,
@@ -3938,7 +3953,7 @@
             "Psychological",
             "Thriller"
         ],
-        "ranking": 249
+        "ranking": 250
     },
     {
         "id": 6594,
@@ -3953,7 +3968,7 @@
             "Adventure",
             "Romance"
         ],
-        "ranking": 250
+        "ranking": 251
     },
     {
         "id": 3002,
@@ -3967,7 +3982,7 @@
             "Psychological",
             "Thriller"
         ],
-        "ranking": 251
+        "ranking": 252
     },
     {
         "id": 440,
@@ -3984,7 +3999,7 @@
             "Psychological",
             "Romance"
         ],
-        "ranking": 252
+        "ranking": 253
     },
     {
         "id": 185,
@@ -3998,21 +4013,6 @@
             "Action",
             "Drama",
             "Sports"
-        ],
-        "ranking": 253
-    },
-    {
-        "id": 164212,
-        "title": {
-            "romaji": "Girls Band Cry",
-            "english": null,
-            "native": "ガールズバンドクライ"
-        },
-        "averageScore": 81,
-        "genres": [
-            "Drama",
-            "Music",
-            "Slice of Life"
         ],
         "ranking": 254
     },
