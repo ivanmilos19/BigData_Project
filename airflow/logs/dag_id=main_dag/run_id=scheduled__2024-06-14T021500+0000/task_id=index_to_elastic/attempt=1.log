@@ -1,0 +1,42 @@
+[2024-06-15T15:02:52.453+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.index_to_elastic scheduled__2024-06-14T02:15:00+00:00 [queued]>
+[2024-06-15T15:02:52.462+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.index_to_elastic scheduled__2024-06-14T02:15:00+00:00 [queued]>
+[2024-06-15T15:02:52.462+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-15T15:02:52.473+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): index_to_elastic> on 2024-06-14 02:15:00+00:00
+[2024-06-15T15:02:52.480+0000] {standard_task_runner.py:57} INFO - Started process 5967 to run task
+[2024-06-15T15:02:52.480+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T15:02:52.483+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'index_to_elastic', 'scheduled__2024-06-14T02:15:00+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpic1f8ti6']
+[2024-06-15T15:02:52.485+0000] {standard_task_runner.py:85} INFO - Job 36: Subtask index_to_elastic
+[2024-06-15T15:02:52.527+0000] {task_command.py:415} INFO - Running <TaskInstance: main_dag.index_to_elastic scheduled__2024-06-14T02:15:00+00:00 [running]> on host 671934266c7c
+[2024-06-15T15:02:52.582+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='index_to_elastic' AIRFLOW_CTX_EXECUTION_DATE='2024-06-14T02:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-14T02:15:00+00:00'
+[2024-06-15T15:02:52.583+0000] {logging_mixin.py:151} INFO - Checking file: datalake/usage/animeAnalysis/AnimeTop300/20240615/combined_ratings.snappy.parquet
+[2024-06-15T15:02:52.586+0000] {logging_mixin.py:151} INFO - File exists: True
+[2024-06-15T15:02:52.588+0000] {logging_mixin.py:151} INFO - File readable: True
+[2024-06-15T15:02:53.658+0000] {_transport.py:336} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.971s]
+[2024-06-15T15:02:53.775+0000] {_transport.py:336} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.114s]
+[2024-06-15T15:02:53.775+0000] {logging_mixin.py:151} INFO - Documents successfully indexed: 520
+[2024-06-15T15:02:53.776+0000] {logging_mixin.py:151} INFO - Documents failed to index: 0
+[2024-06-15T15:02:53.776+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-15T15:02:53.784+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=index_to_elastic, execution_date=20240614T021500, start_date=20240615T150252, end_date=20240615T150253
+[2024-06-15T15:02:53.818+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-15T15:02:53.832+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-15T15:12:42.440+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.index_to_elastic scheduled__2024-06-14T02:15:00+00:00 [queued]>
+[2024-06-15T15:12:42.450+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.index_to_elastic scheduled__2024-06-14T02:15:00+00:00 [queued]>
+[2024-06-15T15:12:42.451+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-15T15:12:42.465+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): index_to_elastic> on 2024-06-14 02:15:00+00:00
+[2024-06-15T15:12:42.473+0000] {standard_task_runner.py:57} INFO - Started process 20928 to run task
+[2024-06-15T15:12:42.473+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T15:12:42.478+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'index_to_elastic', 'scheduled__2024-06-14T02:15:00+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpoogekgjt']
+[2024-06-15T15:12:42.480+0000] {standard_task_runner.py:85} INFO - Job 76: Subtask index_to_elastic
+[2024-06-15T15:12:42.527+0000] {task_command.py:415} INFO - Running <TaskInstance: main_dag.index_to_elastic scheduled__2024-06-14T02:15:00+00:00 [running]> on host 671934266c7c
+[2024-06-15T15:12:42.598+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ivanmilos24@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='index_to_elastic' AIRFLOW_CTX_EXECUTION_DATE='2024-06-14T02:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-14T02:15:00+00:00'
+[2024-06-15T15:12:42.600+0000] {logging_mixin.py:151} INFO - Checking file: datalake/usage/animeAnalysis/AnimeTop300/20240615/combined_ratings.snappy.parquet
+[2024-06-15T15:12:42.602+0000] {logging_mixin.py:151} INFO - File exists: True
+[2024-06-15T15:12:42.605+0000] {logging_mixin.py:151} INFO - File readable: True
+[2024-06-15T15:12:43.637+0000] {_transport.py:336} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.955s]
+[2024-06-15T15:12:43.759+0000] {_transport.py:336} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.119s]
+[2024-06-15T15:12:43.760+0000] {logging_mixin.py:151} INFO - Documents successfully indexed: 520
+[2024-06-15T15:12:43.760+0000] {logging_mixin.py:151} INFO - Documents failed to index: 0
+[2024-06-15T15:12:43.761+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-15T15:12:43.772+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=index_to_elastic, execution_date=20240614T021500, start_date=20240615T151242, end_date=20240615T151243
+[2024-06-15T15:12:43.812+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-15T15:12:43.827+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -5,13 +5,11 @@ import pyarrow.parquet as pq
 import os
 from datetime import date
 
-
-
+# Ensure the URL includes the port, usually 443 for HTTPS if not specified.
 es = Elasticsearch(
-    ["https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io"],
+    ["https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443"],
     basic_auth=("elastic", "NzZISODVwO04jqPNjWUQPcCZ")
 )
-
 
 def load_parquet_to_es(file_path, index_name, id_field):
     try:
@@ -19,14 +17,11 @@ def load_parquet_to_es(file_path, index_name, id_field):
         print(f"File exists: {os.path.exists(file_path)}")
         print(f"File readable: {os.access(file_path, os.R_OK)}")
 
-        
         table = pq.read_table(file_path)
         df = table.to_pandas()
 
-        
         df = df.where(pd.notnull(df), None)
 
-        
         actions = [
             {
                 "_index": index_name,
@@ -36,9 +31,7 @@ def load_parquet_to_es(file_path, index_name, id_field):
             for record in df.to_dict(orient='records')
         ]
 
-        
         success, failed = helpers.bulk(es, actions, stats_only=False, raise_on_error=False)
-        
         
         print(f"Documents successfully indexed: {success}")
         print(f"Documents failed to index: {len(failed)}")
@@ -59,5 +52,3 @@ def load_parquet_to_es(file_path, index_name, id_field):
 def main():
     current_day = date.today().strftime("%Y%m%d")
     load_parquet_to_es(f"datalake/usage/animeAnalysis/AnimeTop300/{current_day}/combined_ratings.snappy.parquet", "anime_stats", "id")  
-
-

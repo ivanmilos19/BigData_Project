@@ -1,0 +1,14 @@
+[2024-06-15T14:15:56.481+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.raw_to_formatted_ANI manual__2024-06-15T14:15:41.604085+00:00 [queued]>
+[2024-06-15T14:15:56.490+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.raw_to_formatted_ANI manual__2024-06-15T14:15:41.604085+00:00 [queued]>
+[2024-06-15T14:15:56.491+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-15T14:15:56.511+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): raw_to_formatted_ANI> on 2024-06-15 14:15:41.604085+00:00
+[2024-06-15T14:15:56.523+0000] {standard_task_runner.py:57} INFO - Started process 155 to run task
+[2024-06-15T14:15:56.525+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'raw_to_formatted_ANI', 'manual__2024-06-15T14:15:41.604085+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpetgi1z7_']
+[2024-06-15T14:15:56.528+0000] {standard_task_runner.py:85} INFO - Job 5: Subtask raw_to_formatted_ANI
+[2024-06-15T14:15:56.572+0000] {task_command.py:415} INFO - Running <TaskInstance: main_dag.raw_to_formatted_ANI manual__2024-06-15T14:15:41.604085+00:00 [running]> on host 474613fe749c
+[2024-06-15T14:15:56.660+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='raw_to_formatted_ANI' AIRFLOW_CTX_EXECUTION_DATE='2024-06-15T14:15:41.604085+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-15T14:15:41.604085+00:00'
+[2024-06-15T14:15:56.662+0000] {logging_mixin.py:151} INFO - raw ANI creating folder /opt/*** datalake/formatted/ANI/Top_anime/20240615
+[2024-06-15T14:15:56.802+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-15T14:15:56.810+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=raw_to_formatted_ANI, execution_date=20240615T141541, start_date=20240615T141556, end_date=20240615T141556
+[2024-06-15T14:15:56.859+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-15T14:15:56.879+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

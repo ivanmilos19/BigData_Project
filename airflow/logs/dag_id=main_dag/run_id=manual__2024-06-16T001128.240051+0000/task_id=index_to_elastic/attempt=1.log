@@ -1,0 +1,20 @@
+[2024-06-16T00:12:01.796+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.index_to_elastic manual__2024-06-16T00:11:28.240051+00:00 [queued]>
+[2024-06-16T00:12:01.806+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.index_to_elastic manual__2024-06-16T00:11:28.240051+00:00 [queued]>
+[2024-06-16T00:12:01.806+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-16T00:12:01.821+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): index_to_elastic> on 2024-06-16 00:11:28.240051+00:00
+[2024-06-16T00:12:01.827+0000] {standard_task_runner.py:57} INFO - Started process 371 to run task
+[2024-06-16T00:12:01.830+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'index_to_elastic', 'manual__2024-06-16T00:11:28.240051+00:00', '--job-id', '134', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpi9s2ao3x']
+[2024-06-16T00:12:01.832+0000] {standard_task_runner.py:85} INFO - Job 134: Subtask index_to_elastic
+[2024-06-16T00:12:01.874+0000] {task_command.py:415} INFO - Running <TaskInstance: main_dag.index_to_elastic manual__2024-06-16T00:11:28.240051+00:00 [running]> on host 28e9c1c64a6d
+[2024-06-16T00:12:01.942+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ivanmilos24@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='index_to_elastic' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T00:11:28.240051+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-16T00:11:28.240051+00:00'
+[2024-06-16T00:12:01.944+0000] {logging_mixin.py:151} INFO - Checking file: datalake/usage/animeAnalysis/AnimeTop300/20240616/combined_ratings.snappy.parquet
+[2024-06-16T00:12:01.946+0000] {logging_mixin.py:151} INFO - File exists: True
+[2024-06-16T00:12:01.949+0000] {logging_mixin.py:151} INFO - File readable: True
+[2024-06-16T00:12:02.992+0000] {_transport.py:336} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.959s]
+[2024-06-16T00:12:03.184+0000] {_transport.py:336} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.189s]
+[2024-06-16T00:12:03.185+0000] {logging_mixin.py:151} INFO - Documents successfully indexed: 520
+[2024-06-16T00:12:03.185+0000] {logging_mixin.py:151} INFO - Documents failed to index: 0
+[2024-06-16T00:12:03.186+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-16T00:12:03.196+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=index_to_elastic, execution_date=20240616T001128, start_date=20240616T001201, end_date=20240616T001203
+[2024-06-16T00:12:03.247+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-16T00:12:03.263+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

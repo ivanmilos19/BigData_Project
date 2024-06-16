@@ -71,6 +71,7 @@ def combine_data(current_day):
         
         print(f"Combined DataFrame has {df_ratings.count()} rows")
 
+        print(f"Writing combined DataFrame to {USAGE_OUTPUT_FOLDER_BEST}")
         
         output_path = os.path.join(USAGE_OUTPUT_FOLDER_BEST, "combined_ratings.snappy.parquet")
         df_ratings.write.mode("overwrite").parquet(output_path)
@@ -84,4 +85,5 @@ def combine_data(current_day):
 def main():
     current_day = date.today().strftime("%Y%m%d")
     combine_data(current_day)
+
 

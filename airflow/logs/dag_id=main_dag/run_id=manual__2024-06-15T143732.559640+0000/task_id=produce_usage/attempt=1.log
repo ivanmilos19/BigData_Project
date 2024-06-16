@@ -1,0 +1,62 @@
+[2024-06-15T14:38:35.912+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.produce_usage manual__2024-06-15T14:37:32.559640+00:00 [queued]>
+[2024-06-15T14:38:35.924+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.produce_usage manual__2024-06-15T14:37:32.559640+00:00 [queued]>
+[2024-06-15T14:38:35.925+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-15T14:38:35.940+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): produce_usage> on 2024-06-15 14:37:32.559640+00:00
+[2024-06-15T14:38:35.948+0000] {standard_task_runner.py:57} INFO - Started process 2834 to run task
+[2024-06-15T14:38:35.948+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T14:38:35.952+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'produce_usage', 'manual__2024-06-15T14:37:32.559640+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp6mswdlt8']
+[2024-06-15T14:38:35.954+0000] {standard_task_runner.py:85} INFO - Job 29: Subtask produce_usage
+[2024-06-15T14:38:35.999+0000] {task_command.py:415} INFO - Running <TaskInstance: main_dag.produce_usage manual__2024-06-15T14:37:32.559640+00:00 [running]> on host 671934266c7c
+[2024-06-15T14:38:36.075+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='produce_usage' AIRFLOW_CTX_EXECUTION_DATE='2024-06-15T14:37:32.559640+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-15T14:37:32.559640+00:00'
+[2024-06-15T14:38:36.101+0000] {clientserver.py:505} INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2024-06-15T14:38:36.102+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T14:38:36.103+0000] {java_gateway.py:1052} INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+[2024-06-15T14:38:36.106+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T14:38:37.217+0000] {logging_mixin.py:151} INFO - +---+----------------------------------------------+----------------+-----------+-------------------------------------------------------------+---------------------------------------------------+----------------+-----------+---------------------------------------------------------+--------------------------+
+|id |english_title_MAL                             |averageScore_MAL|ranking_MAL|genres_MAL                                                   |english_title_ANI                                  |averageScore_ANI|ranking_ANI|genres_ANI                                               |timestamp                 |
++---+----------------------------------------------+----------------+-----------+-------------------------------------------------------------+---------------------------------------------------+----------------+-----------+---------------------------------------------------------+--------------------------+
+|1  |Cowboy Bebop                                  |8.75            |46         |[Action, Award Winning, Sci-Fi]                              |Cowboy Bebop                                       |86              |65         |[Action, Adventure, Drama, Sci-Fi]                       |2024-06-15 14:38:36.695337|
+|5  |Cowboy Bebop: The Movie                       |8.38            |201        |[Action, Sci-Fi]                                             |Cowboy Bebop: The Movie - Knockin' on Heaven's Door|82              |230        |[Action, Drama, Mystery, Sci-Fi]                         |2024-06-15 14:38:36.695337|
+|19 |Monster                                       |8.88            |24         |[Drama, Mystery, Suspense]                                   |Monster                                            |88              |21         |[Drama, Horror, Mystery, Psychological, Thriller]        |2024-06-15 14:38:36.695337|
+|21 |One Piece                                     |8.72            |53         |[Action, Adventure, Fantasy]                                 |ONE PIECE                                          |88              |25         |[Action, Adventure, Comedy, Drama, Fantasy]              |2024-06-15 14:38:36.695337|
+|30 |Neon Genesis Evangelion                       |8.35            |228        |[Action, Avant Garde, Award Winning, Drama, Sci-Fi, Suspense]|Neon Genesis Evangelion                            |83              |183        |[Action, Drama, Mecha, Mystery, Psychological, Sci-Fi]   |2024-06-15 14:38:36.695337|
+|32 |Neon Genesis Evangelion: The End of Evangelion|8.55            |114        |[Action, Avant Garde, Drama, Sci-Fi, Suspense]               |Neon Genesis Evangelion: The End of Evangelion     |85              |83         |[Action, Drama, Mecha, Psychological, Sci-Fi]            |2024-06-15 14:38:36.695337|
+|33 |Berserk                                       |8.59            |96         |[Action, Adventure, Drama, Fantasy, Horror]                  |Berserk                                            |83              |142        |[Action, Adventure, Drama, Fantasy, Horror, Supernatural]|2024-06-15 14:38:36.695337|
+|44 |Samurai X: Trust and Betrayal                 |8.7             |58         |[Action, Drama, Romance]                                     |Samurai X: Trust and Betrayal                      |85              |93         |[Action, Drama, Romance]                                 |2024-06-15 14:38:36.695337|
+|45 |Rurouni Kenshin                               |8.28            |294        |[Action, Comedy, Romance]                                    |                                                   |-1              |-1         |[]                                                       |2024-06-15 14:38:36.695337|
+|57 |Beck: Mongolian Chop Squad                    |8.29            |284        |[Comedy, Drama]                                              |                                                   |-1              |-1         |[]                                                       |2024-06-15 14:38:36.695337|
+|136|Hunter x Hunter                               |8.42            |178        |[Action, Adventure, Fantasy]                                 |Hunter x Hunter                                    |82              |211        |[Action, Adventure, Fantasy]                             |2024-06-15 14:38:36.695337|
+|137|                                              |8.31            |263        |[Action, Adventure, Fantasy]                                 |Hunter x Hunter: Yorknew City                      |81              |291        |[Action, Adventure, Fantasy]                             |2024-06-15 14:38:36.695337|
+|164|Princess Mononoke                             |8.66            |72         |[Action, Adventure, Award Winning, Fantasy]                  |Princess Mononoke                                  |84              |103        |[Action, Adventure, Drama, Fantasy]                      |2024-06-15 14:38:36.695337|
+|170|Slam Dunk                                     |8.54            |118        |[Sports]                                                     |Slam Dunk                                          |83              |182        |[Comedy, Drama, Slice of Life, Sports]                   |2024-06-15 14:38:36.695337|
+|185|Initial D First Stage                         |8.35            |226        |[Action, Drama]                                              |Initial D 1st Stage                                |82              |254        |[Action, Drama, Sports]                                  |2024-06-15 14:38:36.695337|
+|199|Spirited Away                                 |8.77            |40         |[Adventure, Award Winning, Supernatural]                     |Spirited Away                                      |86              |64         |[Adventure, Drama, Fantasy, Supernatural]                |2024-06-15 14:38:36.695337|
+|205|Samurai Champloo                              |8.51            |132        |[Action, Adventure, Comedy]                                  |Samurai Champloo                                   |84              |134        |[Action, Adventure, Comedy]                              |2024-06-15 14:38:36.695337|
+|235|                                              |-1.0            |-1         |[]                                                           |Case Closed                                        |81              |264        |[Adventure, Comedy, Mystery, Psychological]              |2024-06-15 14:38:36.695337|
+|245|Great Teacher Onizuka                         |8.69            |62         |[Comedy]                                                     |GTO: Great Teacher Onizuka                         |84              |106        |[Comedy, Drama, Slice of Life]                           |2024-06-15 14:38:36.695337|
+|263|Fighting Spirit                               |8.77            |39         |[Sports]                                                     |Hajime no Ippo: The Fighting!                      |86              |45         |[Comedy, Drama, Sports]                                  |2024-06-15 14:38:36.695337|
++---+----------------------------------------------+----------------+-----------+-------------------------------------------------------------+---------------------------------------------------+----------------+-----------+---------------------------------------------------------+--------------------------+
+only showing top 20 rows
+[2024-06-15T14:38:37.662+0000] {logging_mixin.py:151} INFO - Combined DataFrame has 520 rows
+[2024-06-15T14:38:37.663+0000] {logging_mixin.py:151} INFO - Writing combined DataFrame to datalake/usage/animeAnalysis/AnimeTop300/20240615
+[2024-06-15T14:38:39.184+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-15T14:38:39.196+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=produce_usage, execution_date=20240615T143732, start_date=20240615T143835, end_date=20240615T143839
+[2024-06-15T14:38:39.257+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-15T14:38:39.287+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

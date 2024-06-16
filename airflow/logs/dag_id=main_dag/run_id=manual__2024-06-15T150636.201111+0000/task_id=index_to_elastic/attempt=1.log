@@ -1,0 +1,19 @@
+[2024-06-15T15:09:38.898+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.index_to_elastic manual__2024-06-15T15:06:36.201111+00:00 [queued]>
+[2024-06-15T15:09:38.914+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.index_to_elastic manual__2024-06-15T15:06:36.201111+00:00 [queued]>
+[2024-06-15T15:09:38.915+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-15T15:09:38.937+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): index_to_elastic> on 2024-06-15 15:06:36.201111+00:00
+[2024-06-15T15:09:38.947+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T15:09:38.947+0000] {standard_task_runner.py:57} INFO - Started process 14830 to run task
+[2024-06-15T15:09:38.971+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'index_to_elastic', 'manual__2024-06-15T15:06:36.201111+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpqwgznal9']
+[2024-06-15T15:09:38.979+0000] {standard_task_runner.py:85} INFO - Job 59: Subtask index_to_elastic
+[2024-06-15T15:09:39.089+0000] {task_command.py:415} INFO - Running <TaskInstance: main_dag.index_to_elastic manual__2024-06-15T15:06:36.201111+00:00 [running]> on host 671934266c7c
+[2024-06-15T15:09:39.229+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ivanmilos24@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='index_to_elastic' AIRFLOW_CTX_EXECUTION_DATE='2024-06-15T15:06:36.201111+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-15T15:06:36.201111+00:00'
+[2024-06-15T15:09:39.230+0000] {logging_mixin.py:151} INFO - Checking file: datalake/usage/animeAnalysis/AnimeTop300/20240615/combined_ratings.snappy.parquet
+[2024-06-15T15:09:39.233+0000] {logging_mixin.py:151} INFO - File exists: True
+[2024-06-15T15:09:39.234+0000] {logging_mixin.py:151} INFO - File readable: True
+[2024-06-15T15:09:39.289+0000] {logging_mixin.py:151} INFO - Documents successfully indexed: 0
+[2024-06-15T15:09:39.290+0000] {logging_mixin.py:151} INFO - Documents failed to index: 0
+[2024-06-15T15:09:39.290+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-15T15:09:39.306+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=index_to_elastic, execution_date=20240615T150636, start_date=20240615T150938, end_date=20240615T150939
+[2024-06-15T15:09:39.366+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-15T15:09:39.396+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

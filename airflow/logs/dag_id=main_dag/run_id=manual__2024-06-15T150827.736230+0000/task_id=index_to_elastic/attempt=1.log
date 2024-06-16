@@ -1,0 +1,42 @@
+[2024-06-15T15:10:03.378+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.index_to_elastic manual__2024-06-15T15:08:27.736230+00:00 [queued]>
+[2024-06-15T15:10:03.388+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.index_to_elastic manual__2024-06-15T15:08:27.736230+00:00 [queued]>
+[2024-06-15T15:10:03.388+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-15T15:10:03.402+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): index_to_elastic> on 2024-06-15 15:08:27.736230+00:00
+[2024-06-15T15:10:03.410+0000] {standard_task_runner.py:57} INFO - Started process 16032 to run task
+[2024-06-15T15:10:03.410+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T15:10:03.414+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'index_to_elastic', 'manual__2024-06-15T15:08:27.736230+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpmkc39wuf']
+[2024-06-15T15:10:03.416+0000] {standard_task_runner.py:85} INFO - Job 63: Subtask index_to_elastic
+[2024-06-15T15:10:03.464+0000] {task_command.py:415} INFO - Running <TaskInstance: main_dag.index_to_elastic manual__2024-06-15T15:08:27.736230+00:00 [running]> on host 671934266c7c
+[2024-06-15T15:10:03.543+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ivanmilos24@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='index_to_elastic' AIRFLOW_CTX_EXECUTION_DATE='2024-06-15T15:08:27.736230+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-15T15:08:27.736230+00:00'
+[2024-06-15T15:10:03.545+0000] {logging_mixin.py:151} INFO - Checking file: datalake/usage/animeAnalysis/AnimeTop300/20240615/combined_ratings.snappy.parquet
+[2024-06-15T15:10:03.548+0000] {logging_mixin.py:151} INFO - File exists: True
+[2024-06-15T15:10:03.551+0000] {logging_mixin.py:151} INFO - File readable: True
+[2024-06-15T15:10:03.890+0000] {clientserver.py:505} INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2024-06-15T15:10:03.891+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T15:10:03.892+0000] {java_gateway.py:1052} INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/airflow/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+[2024-06-15T15:10:03.895+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-06-15T15:10:04.607+0000] {_transport.py:336} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.968s]
+[2024-06-15T15:10:04.727+0000] {_transport.py:336} INFO - PUT https://my-first-deployment-3ab24b.es.us-central1.gcp.cloud.es.io:443/_bulk [status:200 duration:0.116s]
+[2024-06-15T15:10:04.728+0000] {logging_mixin.py:151} INFO - Documents successfully indexed: 520
+[2024-06-15T15:10:04.728+0000] {logging_mixin.py:151} INFO - Documents failed to index: 0
+[2024-06-15T15:10:04.729+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-15T15:10:04.739+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=index_to_elastic, execution_date=20240615T150827, start_date=20240615T151003, end_date=20240615T151004
+[2024-06-15T15:10:04.790+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-15T15:10:04.811+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

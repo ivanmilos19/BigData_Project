@@ -1,0 +1,745 @@
+[2024-06-15T14:23:04.775+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.source_tor_raw_MAL manual__2024-06-15T14:23:01.217685+00:00 [queued]>
+[2024-06-15T14:23:04.792+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.source_tor_raw_MAL manual__2024-06-15T14:23:01.217685+00:00 [queued]>
+[2024-06-15T14:23:04.793+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-06-15T14:23:04.814+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): source_tor_raw_MAL> on 2024-06-15 14:23:01.217685+00:00
+[2024-06-15T14:23:04.823+0000] {standard_task_runner.py:57} INFO - Started process 101 to run task
+[2024-06-15T14:23:04.826+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'source_tor_raw_MAL', 'manual__2024-06-15T14:23:01.217685+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpwnezgr6y']
+[2024-06-15T14:23:04.902+0000] {standard_task_runner.py:85} INFO - Job 12: Subtask source_tor_raw_MAL
+[2024-06-15T14:23:05.239+0000] {task_command.py:415} INFO - Running <TaskInstance: main_dag.source_tor_raw_MAL manual__2024-06-15T14:23:01.217685+00:00 [running]> on host 909c941fcb23
+[2024-06-15T14:23:05.416+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='source_tor_raw_MAL' AIRFLOW_CTX_EXECUTION_DATE='2024-06-15T14:23:01.217685+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-15T14:23:01.217685+00:00'
+[2024-06-15T14:23:08.076+0000] {logging_mixin.py:151} INFO - Request failed for page 3: 429 Client Error: Too Many Requests for url: https://api.jikan.moe/v4/top/anime?page=3
+[2024-06-15T14:23:08.079+0000] {logging_mixin.py:151} INFO - MAL creating folder /opt/*** datalake/raw/MAL/Top_anime/20240615
+[2024-06-15T14:23:08.080+0000] {logging_mixin.py:151} INFO - Writing here:  datalake/raw/MAL/Top_anime/20240615
+[2024-06-15T14:23:08.081+0000] {logging_mixin.py:151} INFO - {
+    "id": 52991,
+    "title": {
+        "romaji": "Sousou no Frieren",
+        "english": "Frieren: Beyond Journey's End",
+        "native": "葬送のフリーレン"
+    },
+    "averageScore": 9.36,
+    "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+    ],
+    "ranking": 1
+}
+[2024-06-15T14:23:08.082+0000] {logging_mixin.py:151} INFO - {
+    "id": 5114,
+    "title": {
+        "romaji": "Fullmetal Alchemist: Brotherhood",
+        "english": "Fullmetal Alchemist: Brotherhood",
+        "native": "鋼の錬金術師 FULLMETAL ALCHEMIST"
+    },
+    "averageScore": 9.09,
+    "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+    ],
+    "ranking": 2
+}
+[2024-06-15T14:23:08.082+0000] {logging_mixin.py:151} INFO - {
+    "id": 9253,
+    "title": {
+        "romaji": "Steins;Gate",
+        "english": "Steins;Gate",
+        "native": "STEINS;GATE"
+    },
+    "averageScore": 9.07,
+    "genres": [
+        "Drama",
+        "Sci-Fi",
+        "Suspense"
+    ],
+    "ranking": 3
+}
+[2024-06-15T14:23:08.082+0000] {logging_mixin.py:151} INFO - {
+    "id": 28977,
+    "title": {
+        "romaji": "Gintama°",
+        "english": "Gintama Season 4",
+        "native": "銀魂°"
+    },
+    "averageScore": 9.06,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+    ],
+    "ranking": 4
+}
+[2024-06-15T14:23:08.083+0000] {logging_mixin.py:151} INFO - {
+    "id": 38524,
+    "title": {
+        "romaji": "Shingeki no Kyojin Season 3 Part 2",
+        "english": "Attack on Titan Season 3 Part 2",
+        "native": "進撃の巨人 Season3 Part.2"
+    },
+    "averageScore": 9.05,
+    "genres": [
+        "Action",
+        "Drama",
+        "Suspense"
+    ],
+    "ranking": 5
+}
+[2024-06-15T14:23:08.083+0000] {logging_mixin.py:151} INFO - {
+    "id": 39486,
+    "title": {
+        "romaji": "Gintama: The Final",
+        "english": "Gintama: The Very Final",
+        "native": "銀魂 THE FINAL"
+    },
+    "averageScore": 9.04,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+    ],
+    "ranking": 6
+}
+[2024-06-15T14:23:08.083+0000] {logging_mixin.py:151} INFO - {
+    "id": 9969,
+    "title": {
+        "romaji": "Gintama'",
+        "english": "Gintama Season 2",
+        "native": "銀魂'"
+    },
+    "averageScore": 9.03,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+    ],
+    "ranking": 7
+}
+[2024-06-15T14:23:08.084+0000] {logging_mixin.py:151} INFO - {
+    "id": 11061,
+    "title": {
+        "romaji": "Hunter x Hunter (2011)",
+        "english": "Hunter x Hunter",
+        "native": "HUNTER×HUNTER（ハンター×ハンター）"
+    },
+    "averageScore": 9.03,
+    "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+    ],
+    "ranking": 8
+}
+[2024-06-15T14:23:08.084+0000] {logging_mixin.py:151} INFO - {
+    "id": 15417,
+    "title": {
+        "romaji": "Gintama': Enchousen",
+        "english": "Gintama: Enchousen",
+        "native": "銀魂' 延長戦"
+    },
+    "averageScore": 9.02,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+    ],
+    "ranking": 9
+}
+[2024-06-15T14:23:08.085+0000] {logging_mixin.py:151} INFO - {
+    "id": 820,
+    "title": {
+        "romaji": "Ginga Eiyuu Densetsu",
+        "english": "Legend of the Galactic Heroes",
+        "native": "銀河英雄伝説"
+    },
+    "averageScore": 9.02,
+    "genres": [
+        "Drama",
+        "Sci-Fi"
+    ],
+    "ranking": 10
+}
+[2024-06-15T14:23:08.085+0000] {logging_mixin.py:151} INFO - {
+    "id": 43608,
+    "title": {
+        "romaji": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+        "english": "Kaguya-sama: Love is War - Ultra Romantic",
+        "native": "かぐや様は告らせたい-ウルトラロマンティック-"
+    },
+    "averageScore": 9.01,
+    "genres": [
+        "Comedy",
+        "Romance"
+    ],
+    "ranking": 11
+}
+[2024-06-15T14:23:08.086+0000] {logging_mixin.py:151} INFO - {
+    "id": 41467,
+    "title": {
+        "romaji": "Bleach: Sennen Kessen-hen",
+        "english": "Bleach: Thousand-Year Blood War",
+        "native": "BLEACH 千年血戦篇"
+    },
+    "averageScore": 9.01,
+    "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+    ],
+    "ranking": 12
+}
+[2024-06-15T14:23:08.086+0000] {logging_mixin.py:151} INFO - {
+    "id": 34096,
+    "title": {
+        "romaji": "Gintama.",
+        "english": "Gintama Season 5",
+        "native": "銀魂。"
+    },
+    "averageScore": 8.98,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+    ],
+    "ranking": 13
+}
+[2024-06-15T14:23:08.086+0000] {logging_mixin.py:151} INFO - {
+    "id": 42938,
+    "title": {
+        "romaji": "Fruits Basket: The Final",
+        "english": "Fruits Basket: The Final Season",
+        "native": "フルーツバスケット The Final"
+    },
+    "averageScore": 8.97,
+    "genres": [
+        "Drama",
+        "Romance",
+        "Supernatural"
+    ],
+    "ranking": 14
+}
+[2024-06-15T14:23:08.087+0000] {logging_mixin.py:151} INFO - {
+    "id": 918,
+    "title": {
+        "romaji": "Gintama",
+        "english": "Gintama",
+        "native": "銀魂"
+    },
+    "averageScore": 8.94,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+    ],
+    "ranking": 15
+}
+[2024-06-15T14:23:08.087+0000] {logging_mixin.py:151} INFO - {
+    "id": 4181,
+    "title": {
+        "romaji": "Clannad: After Story",
+        "english": "Clannad: After Story",
+        "native": "CLANNAD〜AFTER STORY〜 クラナド アフターストーリー"
+    },
+    "averageScore": 8.93,
+    "genres": [
+        "Drama",
+        "Romance",
+        "Supernatural"
+    ],
+    "ranking": 16
+}
+[2024-06-15T14:23:08.087+0000] {logging_mixin.py:151} INFO - {
+    "id": 28851,
+    "title": {
+        "romaji": "Koe no Katachi",
+        "english": "A Silent Voice",
+        "native": "聲の形"
+    },
+    "averageScore": 8.93,
+    "genres": [
+        "Award Winning",
+        "Drama"
+    ],
+    "ranking": 17
+}
+[2024-06-15T14:23:08.088+0000] {logging_mixin.py:151} INFO - {
+    "id": 35180,
+    "title": {
+        "romaji": "3-gatsu no Lion 2nd Season",
+        "english": "March Comes In Like a Lion 2nd Season",
+        "native": "3月のライオン 第2シリーズ"
+    },
+    "averageScore": 8.92,
+    "genres": [
+        "Drama"
+    ],
+    "ranking": 18
+}
+[2024-06-15T14:23:08.089+0000] {logging_mixin.py:151} INFO - {
+    "id": 2904,
+    "title": {
+        "romaji": "Code Geass: Hangyaku no Lelouch R2",
+        "english": "Code Geass: Lelouch of the Rebellion R2",
+        "native": "コードギアス 反逆のルルーシュ 続編"
+    },
+    "averageScore": 8.91,
+    "genres": [
+        "Action",
+        "Award Winning",
+        "Drama",
+        "Sci-Fi"
+    ],
+    "ranking": 19
+}
+[2024-06-15T14:23:08.089+0000] {logging_mixin.py:151} INFO - {
+    "id": 54492,
+    "title": {
+        "romaji": "Kusuriya no Hitorigoto",
+        "english": "The Apothecary Diaries",
+        "native": "薬屋のひとりごと"
+    },
+    "averageScore": 8.9,
+    "genres": [
+        "Drama",
+        "Mystery"
+    ],
+    "ranking": 20
+}
+[2024-06-15T14:23:08.090+0000] {logging_mixin.py:151} INFO - {
+    "id": 15335,
+    "title": {
+        "romaji": "Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien Nare",
+        "english": "Gintama: The Movie: The Final Chapter: Be Forever Yorozuya",
+        "native": "劇場版 銀魂 完結篇 万事屋よ永遠なれ"
+    },
+    "averageScore": 8.9,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+    ],
+    "ranking": 21
+}
+[2024-06-15T14:23:08.090+0000] {logging_mixin.py:151} INFO - {
+    "id": 51535,
+    "title": {
+        "romaji": "Shingeki no Kyojin: The Final Season - Kanketsu-hen",
+        "english": "Attack on Titan: Final Season - The Final Chapters",
+        "native": "進撃の巨人 The Final Season完結編"
+    },
+    "averageScore": 8.89,
+    "genres": [
+        "Action",
+        "Drama",
+        "Suspense"
+    ],
+    "ranking": 22
+}
+[2024-06-15T14:23:08.091+0000] {logging_mixin.py:151} INFO - {
+    "id": 37491,
+    "title": {
+        "romaji": "Gintama.: Shirogane no Tamashii-hen - Kouhan-sen",
+        "english": "Gintama.: Silver Soul Arc - Second Half War",
+        "native": "銀魂. 銀ノ魂篇 後半戦"
+    },
+    "averageScore": 8.88,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+    ],
+    "ranking": 23
+}
+[2024-06-15T14:23:08.091+0000] {logging_mixin.py:151} INFO - {
+    "id": 19,
+    "title": {
+        "romaji": "Monster",
+        "english": "Monster",
+        "native": "モンスター"
+    },
+    "averageScore": 8.88,
+    "genres": [
+        "Drama",
+        "Mystery",
+        "Suspense"
+    ],
+    "ranking": 24
+}
+[2024-06-15T14:23:08.091+0000] {logging_mixin.py:151} INFO - {
+    "id": 35247,
+    "title": {
+        "romaji": "Owarimonogatari 2nd Season",
+        "english": "Owarimonogatari Second Season",
+        "native": "終物語"
+    },
+    "averageScore": 8.87,
+    "genres": [
+        "Comedy",
+        "Mystery",
+        "Supernatural"
+    ],
+    "ranking": 25
+}
+[2024-06-15T14:23:08.092+0000] {logging_mixin.py:151} INFO - {
+    "id": 37987,
+    "title": {
+        "romaji": "Violet Evergarden Movie",
+        "english": "Violet Evergarden: The Movie",
+        "native": "劇場版 ヴァイオレット・エヴァーガーデン"
+    },
+    "averageScore": 8.86,
+    "genres": [
+        "Award Winning",
+        "Drama",
+        "Fantasy"
+    ],
+    "ranking": 26
+}
+[2024-06-15T14:23:08.092+0000] {logging_mixin.py:151} INFO - {
+    "id": 55690,
+    "title": {
+        "romaji": "Boku no Kokoro no Yabai Yatsu 2nd Season",
+        "english": "The Dangers in My Heart Season 2",
+        "native": "僕の心のヤバイやつ 第2期"
+    },
+    "averageScore": 8.85,
+    "genres": [
+        "Comedy",
+        "Romance"
+    ],
+    "ranking": 27
+}
+[2024-06-15T14:23:08.092+0000] {logging_mixin.py:151} INFO - {
+    "id": 32281,
+    "title": {
+        "romaji": "Kimi no Na wa.",
+        "english": "Your Name.",
+        "native": "君の名は。"
+    },
+    "averageScore": 8.84,
+    "genres": [
+        "Award Winning",
+        "Drama",
+        "Supernatural"
+    ],
+    "ranking": 28
+}
+[2024-06-15T14:23:08.093+0000] {logging_mixin.py:151} INFO - {
+    "id": 40682,
+    "title": {
+        "romaji": "Kingdom 3rd Season",
+        "english": "Kingdom: Season 3",
+        "native": "キングダム 第3シリーズ"
+    },
+    "averageScore": 8.82,
+    "genres": [
+        "Action"
+    ],
+    "ranking": 29
+}
+[2024-06-15T14:23:08.093+0000] {logging_mixin.py:151} INFO - {
+    "id": 51009,
+    "title": {
+        "romaji": "Jujutsu Kaisen 2nd Season",
+        "english": "Jujutsu Kaisen Season 2",
+        "native": "呪術廻戦 懐玉・玉折／渋谷事変"
+    },
+    "averageScore": 8.82,
+    "genres": [
+        "Action",
+        "Fantasy"
+    ],
+    "ranking": 30
+}
+[2024-06-15T14:23:08.093+0000] {logging_mixin.py:151} INFO - {
+    "id": 49387,
+    "title": {
+        "romaji": "Vinland Saga Season 2",
+        "english": "Vinland Saga Season 2",
+        "native": "ヴィンランド・サガ SEASON2"
+    },
+    "averageScore": 8.81,
+    "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+    ],
+    "ranking": 31
+}
+[2024-06-15T14:23:08.094+0000] {logging_mixin.py:151} INFO - {
+    "id": 36838,
+    "title": {
+        "romaji": "Gintama.: Shirogane no Tamashii-hen",
+        "english": "Gintama.: Silver Soul Arc",
+        "native": "銀魂. 銀ノ魂篇"
+    },
+    "averageScore": 8.81,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+    ],
+    "ranking": 32
+}
+[2024-06-15T14:23:08.094+0000] {logging_mixin.py:151} INFO - {
+    "id": 37510,
+    "title": {
+        "romaji": "Mob Psycho 100 II",
+        "english": "Mob Psycho 100 II",
+        "native": "モブサイコ100 II"
+    },
+    "averageScore": 8.79,
+    "genres": [
+        "Action",
+        "Comedy",
+        "Supernatural"
+    ],
+    "ranking": 33
+}
+[2024-06-15T14:23:08.094+0000] {logging_mixin.py:151} INFO - {
+    "id": 32935,
+    "title": {
+        "romaji": "Haikyuu!! Karasuno Koukou vs. Shiratorizawa Gakuen Koukou",
+        "english": "Haikyu!! 3rd Season",
+        "native": "ハイキュー!! 烏野高校 VS 白鳥沢学園高校"
+    },
+    "averageScore": 8.78,
+    "genres": [
+        "Sports"
+    ],
+    "ranking": 34
+}
+[2024-06-15T14:23:08.094+0000] {logging_mixin.py:151} INFO - {
+    "id": 31758,
+    "title": {
+        "romaji": "Kizumonogatari III: Reiketsu-hen",
+        "english": "Kizumonogatari Part 3: Cold-Blooded",
+        "native": "傷物語〈Ⅲ冷血篇〉"
+    },
+    "averageScore": 8.78,
+    "genres": [
+        "Action",
+        "Mystery",
+        "Supernatural"
+    ],
+    "ranking": 35
+}
+[2024-06-15T14:23:08.095+0000] {logging_mixin.py:151} INFO - {
+    "id": 47917,
+    "title": {
+        "romaji": "Bocchi the Rock!",
+        "english": "Bocchi the Rock!",
+        "native": "ぼっち・ざ・ろっく！"
+    },
+    "averageScore": 8.78,
+    "genres": [
+        "Comedy"
+    ],
+    "ranking": 36
+}
+[2024-06-15T14:23:08.095+0000] {logging_mixin.py:151} INFO - {
+    "id": 40028,
+    "title": {
+        "romaji": "Shingeki no Kyojin: The Final Season",
+        "english": "Attack on Titan: Final Season",
+        "native": "進撃の巨人 The Final Season"
+    },
+    "averageScore": 8.78,
+    "genres": [
+        "Action",
+        "Drama",
+        "Suspense"
+    ],
+    "ranking": 37
+}
+[2024-06-15T14:23:08.095+0000] {logging_mixin.py:151} INFO - {
+    "id": 52198,
+    "title": {
+        "romaji": "Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai",
+        "english": "Kaguya-sama: Love is War - The First Kiss That Never Ends",
+        "native": "かぐや様は告らせたい -ファーストキッスは終わらない-"
+    },
+    "averageScore": 8.77,
+    "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+    ],
+    "ranking": 38
+}
+[2024-06-15T14:23:08.096+0000] {logging_mixin.py:151} INFO - {
+    "id": 263,
+    "title": {
+        "romaji": "Hajime no Ippo",
+        "english": "Fighting Spirit",
+        "native": "はじめの一歩 THE FIGHTING!"
+    },
+    "averageScore": 8.77,
+    "genres": [
+        "Sports"
+    ],
+    "ranking": 39
+}
+[2024-06-15T14:23:08.096+0000] {logging_mixin.py:151} INFO - {
+    "id": 199,
+    "title": {
+        "romaji": "Sen to Chihiro no Kamikakushi",
+        "english": "Spirited Away",
+        "native": "千と千尋の神隠し"
+    },
+    "averageScore": 8.77,
+    "genres": [
+        "Adventure",
+        "Award Winning",
+        "Supernatural"
+    ],
+    "ranking": 40
+}
+[2024-06-15T14:23:08.096+0000] {logging_mixin.py:151} INFO - {
+    "id": 55016,
+    "title": {
+        "romaji": "Idol",
+        "english": null,
+        "native": "アイドル"
+    },
+    "averageScore": 8.76,
+    "genres": [],
+    "ranking": 41
+}
+[2024-06-15T14:23:08.097+0000] {logging_mixin.py:151} INFO - {
+    "id": 17074,
+    "title": {
+        "romaji": "Monogatari Series: Second Season",
+        "english": "Monogatari Series: Second Season",
+        "native": "〈物語〉シリーズ セカンドシーズン"
+    },
+    "averageScore": 8.76,
+    "genres": [
+        "Comedy",
+        "Mystery",
+        "Romance",
+        "Supernatural"
+    ],
+    "ranking": 42
+}
+[2024-06-15T14:23:08.097+0000] {logging_mixin.py:151} INFO - {
+    "id": 45649,
+    "title": {
+        "romaji": "The First Slam Dunk",
+        "english": null,
+        "native": "THE FIRST SLAM DUNK"
+    },
+    "averageScore": 8.76,
+    "genres": [
+        "Award Winning",
+        "Sports"
+    ],
+    "ranking": 43
+}
+[2024-06-15T14:23:08.097+0000] {logging_mixin.py:151} INFO - {
+    "id": 48583,
+    "title": {
+        "romaji": "Shingeki no Kyojin: The Final Season Part 2",
+        "english": "Attack on Titan: Final Season Part 2",
+        "native": "進撃の巨人 The Final Season Part 2"
+    },
+    "averageScore": 8.76,
+    "genres": [
+        "Action",
+        "Drama",
+        "Suspense"
+    ],
+    "ranking": 44
+}
+[2024-06-15T14:23:08.098+0000] {logging_mixin.py:151} INFO - {
+    "id": 37521,
+    "title": {
+        "romaji": "Vinland Saga",
+        "english": null,
+        "native": "ヴィンランド・サガ"
+    },
+    "averageScore": 8.75,
+    "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+    ],
+    "ranking": 45
+}
+[2024-06-15T14:23:08.098+0000] {logging_mixin.py:151} INFO - {
+    "id": 1,
+    "title": {
+        "romaji": "Cowboy Bebop",
+        "english": "Cowboy Bebop",
+        "native": "カウボーイビバップ"
+    },
+    "averageScore": 8.75,
+    "genres": [
+        "Action",
+        "Award Winning",
+        "Sci-Fi"
+    ],
+    "ranking": 46
+}
+[2024-06-15T14:23:08.098+0000] {logging_mixin.py:151} INFO - {
+    "id": 47778,
+    "title": {
+        "romaji": "Kimetsu no Yaiba: Yuukaku-hen",
+        "english": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
+        "native": "鬼滅の刃 遊郭編"
+    },
+    "averageScore": 8.75,
+    "genres": [
+        "Action",
+        "Fantasy"
+    ],
+    "ranking": 47
+}
+[2024-06-15T14:23:08.099+0000] {logging_mixin.py:151} INFO - {
+    "id": 53223,
+    "title": {
+        "romaji": "Kingdom 5th Season",
+        "english": "Kingdom: Season 5",
+        "native": "キングダム 第5シリーズ"
+    },
+    "averageScore": 8.74,
+    "genres": [
+        "Action"
+    ],
+    "ranking": 48
+}
+[2024-06-15T14:23:08.099+0000] {logging_mixin.py:151} INFO - {
+    "id": 50160,
+    "title": {
+        "romaji": "Kingdom 4th Season",
+        "english": "Kingdom: Season 4",
+        "native": "キングダム 第4シリーズ"
+    },
+    "averageScore": 8.74,
+    "genres": [
+        "Action"
+    ],
+    "ranking": 49
+}
+[2024-06-15T14:23:08.099+0000] {logging_mixin.py:151} INFO - {
+    "id": 44074,
+    "title": {
+        "romaji": "Shiguang Dailiren",
+        "english": "Link Click",
+        "native": "时光代理人"
+    },
+    "averageScore": 8.74,
+    "genres": [
+        "Drama",
+        "Mystery",
+        "Supernatural",
+        "Suspense"
+    ],
+    "ranking": 50
+}
+[2024-06-15T14:23:08.100+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-06-15T14:23:08.109+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=source_tor_raw_MAL, execution_date=20240615T142301, start_date=20240615T142304, end_date=20240615T142308
+[2024-06-15T14:23:08.137+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-06-15T14:23:08.166+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check
